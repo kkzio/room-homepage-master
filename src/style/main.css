@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-family: "Spartan", sans-serif;
+  font-size: 1em;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+.textGrey {
+  font-size: 0.75em;
+  line-height: 1.5em;
+  color: #a1a1a1;
+}
+
+body .navbar {
+  position: absolute;
+  z-index: 1;
+  top: 8%;
+  left: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .navbar .btn-hamburger {
+  display: none;
+}
+
+body .navbar .logo {
+  color: white;
+  font-size: 1.5em;
+}
+
+body .navbar .nav-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 3%;
+  margin-left: 20%;
+}
+
+body .navbar .nav-menu .nav-link a {
+  display: inline-block;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  color: white;
+}
+
+body .navbar .nav-menu .nav-link a:after {
+  display: block;
+  content: "";
+  border-bottom: solid 2px white;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  transition: -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+  width: 50%;
+  margin-left: 25%;
+}
+
+body .navbar .nav-menu .nav-link a:hover:after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+body .navbar .nav-menu .btn-close {
+  display: none;
+}
+
+body .navbar .nav-menu > *:not(:last-child) {
+  margin-right: 15%;
+}
+
+body header .splide__arrows {
+  position: absolute;
+  left: 62%;
+  width: 144px;
+}
+
+body header .splide__arrows .splide__arrow {
+  background-color: black;
+  opacity: 1;
+  top: 66vh;
+  border-radius: 0;
+  height: 56px;
+  width: 56px;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+body header .splide__arrows .splide__arrow:hover {
+  background-color: #454545;
+}
+
+body header .hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 70vh;
+}
+
+body header .hero .img-hero {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+body header .hero .info-hero {
+  padding: 0 5%;
+}
+
+body header .hero .info-hero h1 {
+  font-size: 2em;
+  color: black;
+  font-weight: 700;
+}
+
+body header .hero .info-hero a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body header .hero .info-hero a span {
+  color: black;
+  margin-right: 10%;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  text-transform: uppercase;
+  font-size: 0.75em;
+  letter-spacing: 0.75em;
+}
+
+body header .hero .info-hero a span:hover {
+  color: #a1a1a1;
+  margin-right: 15%;
+}
+
+body header .hero .info-hero > *:not(:last-child) {
+  margin-bottom: 10%;
+}
+
+body .about-furniture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 30vh;
+}
+
+body .about-furniture img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+body .about-furniture .about-furniture-info {
+  padding: 0 5%;
+}
+
+body .about-furniture .about-furniture-info h1 {
+  font-size: 1em;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: black;
+  letter-spacing: 0.2em;
+}
+
+body .about-furniture .about-furniture-info > *:not(:last-child) {
+  margin-bottom: 2%;
+}
+
+body .attribution {
+  text-align: center;
+  margin: 2% 0;
+  font-size: 0.75em;
+}
+
+@media screen and (max-width: 500px) {
+  body .navbar {
+    top: 4%;
+    width: 55vw;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  body .navbar .btn-hamburger {
+    display: block;
+  }
+  body .navbar .logo {
+    color: white;
+    font-size: 1.5em;
+  }
+  body .navbar .nav-menu {
+    position: absolute;
+    background-color: white;
+    -webkit-transform: translate(-5%, -140%);
+            transform: translate(-5%, -140%);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    width: 100vw;
+    margin-left: 0%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 20%;
+  }
+  body .navbar .nav-menu .nav-link a {
+    color: black;
+  }
+  body .navbar .nav-menu .btn-close {
+    display: block;
+  }
+  body .navbar .nav-menu > *:not(:last-child) {
+    margin-right: 5%;
+  }
+  body .navbar .nav-menu.active {
+    -webkit-transform: translate(-5%, -35%);
+            transform: translate(-5%, -35%);
+  }
+  body header .splide__arrows {
+    left: 72%;
+    width: 120px;
+  }
+  body header .splide__arrows .splide__arrow {
+    top: 46.5vh;
+    height: 44px;
+    width: 44px;
+  }
+  body header .splide__arrows .splide__arrow:hover {
+    background-color: black;
+  }
+  body header .hero {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100vh;
+  }
+  body header .hero .img-hero {
+    height: 50vh;
+  }
+  body header .hero .info-hero {
+    padding: 10%;
+  }
+  body header .hero .info-hero h1 {
+    font-size: 1.5em;
+  }
+  body header .hero .info-hero > *:not(:last-child) {
+    margin-bottom: 10%;
+  }
+  body .about-furniture {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: unset;
+  }
+  body .about-furniture .about-furniture-info {
+    padding: 10%;
+  }
+  body .about-furniture .about-furniture-info > *:not(:last-child) {
+    margin-bottom: 5%;
+  }
+  body .attribution {
+    margin: 5% 10%;
+  }
+}
