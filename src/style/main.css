@@ -94,13 +94,13 @@ body .navbar .nav-menu > *:not(:last-child) {
   margin-right: 15%;
 }
 
-body header .splide__arrows {
+body main .splide__arrows {
   position: absolute;
   left: 62%;
   width: 144px;
 }
 
-body header .splide__arrows .splide__arrow {
+body main .splide__arrows .splide__arrow {
   background-color: black;
   opacity: 1;
   top: 66vh;
@@ -111,11 +111,11 @@ body header .splide__arrows .splide__arrow {
   transition: all 0.2s ease-in;
 }
 
-body header .splide__arrows .splide__arrow:hover {
+body main .splide__arrows .splide__arrow:hover {
   background-color: #454545;
 }
 
-body header .hero {
+body main .hero {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -125,24 +125,24 @@ body header .hero {
   height: 70vh;
 }
 
-body header .hero .img-hero {
+body main .hero .img-hero {
   -o-object-fit: cover;
      object-fit: cover;
   height: 100%;
   width: 100%;
 }
 
-body header .hero .info-hero {
+body main .hero .info-hero {
   padding: 0 5%;
 }
 
-body header .hero .info-hero h1 {
+body main .hero .info-hero h1 {
   font-size: 2em;
   color: black;
   font-weight: 700;
 }
 
-body header .hero .info-hero a {
+body main .hero .info-hero a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -151,7 +151,7 @@ body header .hero .info-hero a {
           align-items: center;
 }
 
-body header .hero .info-hero a span {
+body main .hero .info-hero a span {
   color: black;
   margin-right: 10%;
   -webkit-transition: all 0.2s ease-in;
@@ -161,12 +161,12 @@ body header .hero .info-hero a span {
   letter-spacing: 0.75em;
 }
 
-body header .hero .info-hero a span:hover {
+body main .hero .info-hero a span:hover {
   color: #a1a1a1;
   margin-right: 15%;
 }
 
-body header .hero .info-hero > *:not(:last-child) {
+body main .hero .info-hero > *:not(:last-child) {
   margin-bottom: 10%;
 }
 
@@ -254,35 +254,35 @@ body .attribution {
     -webkit-transform: translate(-5%, -35%);
             transform: translate(-5%, -35%);
   }
-  body header .splide__arrows {
+  body main .splide__arrows {
     left: 72%;
     width: 120px;
   }
-  body header .splide__arrows .splide__arrow {
+  body main .splide__arrows .splide__arrow {
     top: 46.5vh;
     height: 44px;
     width: 44px;
   }
-  body header .splide__arrows .splide__arrow:hover {
+  body main .splide__arrows .splide__arrow:hover {
     background-color: black;
   }
-  body header .hero {
+  body main .hero {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     height: 100vh;
   }
-  body header .hero .img-hero {
+  body main .hero .img-hero {
     height: 50vh;
   }
-  body header .hero .info-hero {
+  body main .hero .info-hero {
     padding: 10%;
   }
-  body header .hero .info-hero h1 {
+  body main .hero .info-hero h1 {
     font-size: 1.5em;
   }
-  body header .hero .info-hero > *:not(:last-child) {
+  body main .hero .info-hero > *:not(:last-child) {
     margin-bottom: 10%;
   }
   body .about-furniture {
